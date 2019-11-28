@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    #oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@vdbwlk.knet.cn:1521:ora9
+    username: knet
+    password: kwdomain
+    dbcp2:
+      max-idle: 30
+      min-idle: 5
+      initial-size: 5
+      max-wait-millis: 12000
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      validation-query: select 1 from dual
+      time-between-eviction-runs-millis: 180000
+      num-tests-per-eviction-run: 3
+      min-evictable-idle-time-millis: 180000
+    type: org.apache.commons.dbcp2.BasicDataSource
+
+

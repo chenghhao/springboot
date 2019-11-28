@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: @profileActive@
+
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    default-property-inclusion: always
+    time-zone: GMT+8
